@@ -20,7 +20,7 @@ This first phase focuses on **UI design and navigation only**. Future phases wil
 
 ---
 
-## 📊 UML Class Diagram (Database Design - For Future Stages)
+## UML Class Diagram (Database Design - For Future Stages)
 The prototype includes a database design for upcoming phases.  
 Entities include:
 - **User** (login + role management)  
