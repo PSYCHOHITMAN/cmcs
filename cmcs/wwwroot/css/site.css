@@ -1,0 +1,55 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.stat-card {
+    padding: .5rem 1rem;
+    border: 1px solid #eaeaea;
+    border-radius: var(--radius);
+    background: #fff;
+}
+
+.stat-value {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: .8rem;
+    color: #6c757d;
+}
+
+.card {
+    border-radius: var(--radius);
+}
+
+.btn, .form-control, .form-select {
+    border-radius: .75rem;
+}
+
+.navbar-brand {
+    letter-spacing: .5px;
+}
+
+.table > :not(caption) > * > * {
+    vertical-align: middle;
+}

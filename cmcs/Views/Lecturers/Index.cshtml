@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Lecturer Page";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h4 mb-0">Lecturers</h1>
+    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addLecturerModal">Add Lecturer</button>
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Staff ID</th>
+                        <th>Module</th>
+                        <th>Hourly Rate</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>J. Maseko</td>
+                        <td>IC-1021</td>
+                        <td>PROG6212</td>
+                        <td>R 400</td>
+                        <td class="text-end">
+                            <div class="btn-group">
+                                <button class="btn btn-sm btn-outline-secondary">View Claims</button>
+                                <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                <button class="btn btn-sm btn-outline-danger">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>N. Patel</td>
+                        <td>IC-1044</td>
+                        <td>SOFT6212</td>
+                        <td>R 420</td>
+                        <td class="text-end">
+                            <div class="btn-group">
+                                <button class="btn btn-sm btn-outline-secondary">View Claims</button>
+                                <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                <button class="btn btn-sm btn-outline-danger">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-secondary small mb-0">Admin can manage lecturer information (visual only).</p>
+    </div>
+</div>
+
+<!-- Add Lecturer Modal (mock) -->
+<div class="modal fade" id="addLecturerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Add Lecturer</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="e.g., Jane Doe" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Staff ID</label>
+                        <input type="text" class="form-control" placeholder="IC-10xx" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Module</label>
+                        <input type="text" class="form-control" placeholder="e.g., PROG6212" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Hourly Rate (R)</label>
+                        <input type="number" class="form-control" placeholder="e.g., 400" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save (Mock)</button>
+            </div>
+        </div>
+    </div>
+</div>
